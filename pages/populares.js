@@ -5,10 +5,9 @@ import { FirebaseContext } from '../firebase';
 import DetallesProducto from '../components/layout/DetallesProducto';
 import useProductos from '../hooks/useProductos';
 
-const Home = () => {
+const Populares = () => {
 
-
-  const {productos:data}=useProductos('creado');
+  const {productos:data}=useProductos('votos')
   return (
     <div>
       <Layout>
@@ -28,4 +27,4 @@ const Home = () => {
   );
 }
  
-export default Home;
+export default Populares;
